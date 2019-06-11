@@ -1,0 +1,15 @@
+article.recipe {
+    width: 60mm;
+    height: 35mm;
+    overflow: hidden;
+    background-color: antiquewhite;
+    border: 2px solid darkslategray;
+}
+
+#content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
