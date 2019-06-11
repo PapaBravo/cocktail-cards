@@ -6,7 +6,8 @@ const cocktailList = [
             { amount: '30ml', type: 'Lime juice' },
             { amount: '15ml', type: 'Orange Liquer' },
             { amount: '15ml', type: 'Aguave syrup' },
-        ]
+        ],
+        icons: ['tumbler', 'shaker']
     },
     {
         name: 'Margarita',
@@ -50,12 +51,21 @@ function buildIngredientTable(ingredients) {
     return `<table><tbody>${body}</tbody></table>`;
 }
 
+function buildIconFooter(icons) {
+    if (icons) {
+        return icons.map(i => `<i class="icon-${i}"></i>`).join('\n');
+    } else {
+        return '';
+    }
+}
+
 function buildCard(cocktail) {
     return `
         <article class="recipe">
+            <div class="glue"></div>
             <header>${cocktail.name}</header>
             ${buildIngredientTable(cocktail.ingredients)}
-            <footer></footer>
+            <footer>${buildIconFooter(cocktail.icons)}</footer>
         </article>
     `
 }
