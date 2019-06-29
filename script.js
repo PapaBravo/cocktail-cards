@@ -10,12 +10,15 @@ const cocktailList = [
         icons: ['tumbler', 'shaker']
     },
     {
-        name: 'Margarita',
+        name: 'Bloody Red Shirt',
         ingredients: [
-            { amount: '60ml', type: 'Tequila' },
-            { amount: '30ml', type: 'Lime juice' },
-            { amount: '15ml', type: 'Orange Liquer' },
-            { amount: '15ml', type: 'Aguave syrup' },
+            { amount: '4cl', type: 'Wodka' },
+            { amount: '8cl', type: 'Tomatensaft' },
+            { amount: '1/2', type: 'Limette' },
+            { amount: '4 Spritzer', type: 'Worcester Sauce' },
+            { amount: '4 Spritzer', type: 'Tabasco' },
+            { type: 'Salz, Pfeffer' },
+            { type: 'Shaken' },
         ]
     },
     {
